@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Telefônica</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Agenda de contatos</h1>
+      <img src="./images/agenda-icon.png" alt="Ícone agenda telefônica">
+    </header>
+    <form id="register-form">
+      <div>
+        <label for="input-name">Nome do contato:</label>
+        <input type="text" id="input-name" placeholder="Insira o nome do contato" required>
+      </div>
+      <div>
+        <label for="input-number">Número do contato:</label>
+        <input type="tel" id="input-number" placeholder="Insira um número de telefone">
+      </div>
+      <div>
+        <label for="contact-type">Tipo de contato:</label>
+        <select name="contact-type" id="contact-type" required>
+          <option value="" selected>Selecione</option>
+          <option value="Particular">Particular</option>
+          <option value="Profissional">Profissional</option>
+        </select>
+      </div>
+      <button type="submit">Adicionar</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Tipo de Contato</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
